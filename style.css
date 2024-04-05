@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: 'Roboto Mono';
+    font-weight: 100 700;
+    font-display: swap;
+    transition: all 0.2s ease;
+
+}
+
+body {
+    background-color: #0b95ff;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+main h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #0099cc55;
+    color: #fff;
+    box-shadow: #00000062 0 0 3px 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    align-items: center;
+}
+
+.logo img{
+    width: 40%;
+    border-radius: 100px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 5em;
+}
+
+.elencos button {
+    padding: 0.6em;
+    width: 100px;
+    font-size: 1em;
+    font-weight: 700;
+    background: #c5c5c5af;
+    color: #fff;
+    border: solid #ffffff 2px;
+    border-radius: 5px;
+}
+
+.elencos button:hover {
+    background-color: #82e0ffc0;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 15em;
+}
+
+section .comeco {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .comeco .textPersol {
+    font-size: 2em;
+}
+
+section .comeco .imagemPersol img {
+    width: 150%;
+    height: auto;
+    border-radius: 10px;
+}
+
+section .comeco .imagemPersol img:hover {
+    transform: scale(1.2);
+}
+
+.sectionAr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8em;
+}
+
+section .wrapper {
+    width: 60%;
+}
+
+#buttonTop {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+#buttonTop button {
+    background: none;
+    color: #fff;
+    border: #000 solid 2px;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: #000 0px 3px 3px 0px;
+}
+
+#buttonTop button:hover {
+    background-color: #0043a192;
+
+}
+
+section .cardElenco {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5em 0;
+}
+
+section .cardElenco .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+section .cardElenco .img img:hover {
+    transform: scale(1.1);
+
+}
+
+section .cardElenco .line {
+    border: #000 solid 3px;
+    padding: 7em 0;
+}
+
+section .cardElenco .text {
+    width: 50%;
+}
+
+footer {
+    background-color: #0099cc55;
+    color: #fff;
+    box-shadow: #00000062 0 0 3px 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
+a:hover {
+    color: #002e51f7;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+h2, .comeco, .wrapperText, .cardElenco {
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
